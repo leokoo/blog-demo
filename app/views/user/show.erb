@@ -5,3 +5,7 @@ Email: <%= @user.email %>
 Description: <%= @user.description %>
 
 <a href="/users/<%= users.id %>/edit"> Edit Profile </a>
+<form action="/users" method="POST">
+	<input type="hidden" name="_method" value="delete">
+	<input type="submit" value="Delete">
+</form>
